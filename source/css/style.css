@@ -1,5 +1,5 @@
 :root {
- --linear-gradient: 90deg, rgb(186, 3, 186), rgb(102, 2, 102), rgb(31, 0, 31);
+ --linear-gradient: 45deg, #00076f, #44008d, #9e45af, #e54dd3;
 }
 
 * {
@@ -35,4 +35,20 @@
   justify-content: center;
   background: linear-gradient(var(--linear-gradient));
   background-size: 400% 300%;
+  animation: colors 30s ease infinite;
 }
+
+@keyframes colors {
+  0%{
+      background-position:0% 50%;
+  }
+
+  50%{
+      background-position:100% 50%;
+
+  }
+
+  100%{
+      background-position:0% 50%;
+
+  }
